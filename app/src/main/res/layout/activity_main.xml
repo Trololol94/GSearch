@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.etna.gsearch.MainActivity"
+    android:nestedScrollingEnabled="false"
+    android:measureWithLargestChild="false">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imRestaurant"
+                android:src="@drawable/restaurant"
+                android:contentDescription="Restaurant"
+                android:clickable="true"
+                android:adjustViewBounds="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imSuper"
+                android:src="@drawable/coiffeur"
+                android:contentDescription="Supermarché"
+                android:clickable="true"
+                android:adjustViewBounds="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imTatou"
+                android:src="@drawable/tatoueur"
+                android:contentDescription="Tatoueur"
+                android:clickable="true"
+                android:adjustViewBounds="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchText"
+                android:inputType="text" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:id="@+id/submit"
+                android:layout_gravity="right"
+                android:width="50dp"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
